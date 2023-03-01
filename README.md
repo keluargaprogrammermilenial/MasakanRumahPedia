@@ -32,3 +32,4 @@ Kami membuaka kerjasama dengan pihak manapun selama memiliki visi dan mendukung 
 * Terimakasih - Salam Hormat & Salam Hangat Semangat Terus Belajar : Stay Hungry Stay Foolish
 www.berkahsoft.com
 youtube.com/@keluargaprogrammermilenial
+email : BerkahSoft@gmail.com
