@@ -1,0 +1,278 @@
+@font-face {
+    font-family: "ComicSans";
+    src: url("/font/EMcomic-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: "ComicSans" !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden;
+    transition: .3s;
+}
+
+.menuOpen {
+    background-image: linear-gradient(to bottom, #FFC946, #e12121) !important;
+}
+
+.menuOpen:hover,
+.nav-treeview .nav-link:hover,
+.dashboardMenu:hover, 
+.lihatPassword:hover,
+.imgPreviewEditAdmin:hover,
+.lihatPasswordLamaEdit:hover,
+.lihatPasswordEdit:hover,
+.imgPreviewEditMember:hover,
+.lihatPasswordLamaEditMember:hover,
+.lihatPasswordEditMember:hover,
+.lihatPasswordTambahMember:hover,
+.lihatProduk:hover,
+.imgPreviewProdukEdit:hover,
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+.menuOpen, .nav-link {
+    border-radius: 50px !important;
+}
+
+/* Style scroll bar */
+/* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* membuat background dari scrollbar */
+/* kasih warna transparan agar lebih estetik  */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* membuat styling pada batang atau bar scrollbar  */
+/* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+/* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+.smallBoxProduk {
+    height: 87% !important;
+}
+
+.loadingSmallBox {
+    transition: 1s;
+}
+
+.dashboard-utama,
+.admin-list,
+.admin-tambah,
+.admin-detail,
+.admin-edit,
+.member-list,
+.member-tambah,
+.member-detail,
+.member-edit,
+.produk-list {
+    transition: .2s;
+    opacity: 0;
+    transform: scale(.5);
+}
+
+table tr td, 
+table tr th {
+    vertical-align: middle !important;
+}
+
+.form-control-border:focus {
+    border-bottom-color: #FAAA3F !important;
+}
+
+.lihatPassword,
+.input-group-text {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+/* 
+.lihatPassword:hover {
+    cursor: pointer;
+} */
+
+.lihatPassword span {
+    transition: 1s;
+}
+
+.myInput {
+    border-radius: 15px !important;
+    padding: 25px !important;
+    transition: .8s !important;
+}
+
+/* 
+select.myInput {
+    padding: 10px !important;
+} */
+
+.myInput:focus {
+    box-shadow: 1px 1px 23px #FFB800 !important;
+    transform: scale(1) !important;
+}
+
+.mySelect {
+    border-radius: 15px !important;
+    /* padding: 25px !important; */
+    transition: .8s;
+}
+
+.mySelect:focus {
+    box-shadow: 1px 1px 23px #FFB800 !important;
+}
+
+.mySelectOption {
+    z-index: 99999;
+}
+
+.provinces,
+.regencies,
+.districts,
+.villages,
+.provincesEditAdmin,
+.regenciesEditAdmin,
+.districtsEditAdmin,
+.villagesEditAdmin,
+.provincesTambahMember,
+.regenciesTambahMember,
+.districtsTambahMember,
+.villagesTambahMember,
+.provincesEditMember,
+.regenciesEditMember,
+.districtsEditMember,
+.villagesEditMember {
+    transition: .7s;
+    transform: scale(.5);
+    opacity: 0;
+}
+
+.loaderApiDaerah,
+.loaderApiDaerahEditAdmin,
+.loaderApiDaerahTambahMember,
+.loaderApiDaerahEditMember {
+    width: 95%;
+    height: 5px;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, #FFC946, #e12121);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.animationForLoaderApi {
+    opacity: 1 !important;
+    animation: loaderApiAnimation 1s ease-in infinite alternate;
+}
+
+
+
+.activeSelectLokasi {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+
+.iconLocation {
+    opacity: 0;
+    transition: .3s;
+}
+
+.hButton {
+    min-height: 50px;
+}
+
+.btn-auth {
+    width: 100% !important;
+    font-size: 20px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 2px 1px #831822 !important;
+    transition: .1s;
+    height: 45px;
+}
+
+.btn-auth:active {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 !important;
+}
+
+.no-cursor:hover {
+    cursor: default !important;
+}
+
+.detailAdmin,
+.detailMember,
+.detailProduk {
+    bottom: 0px;
+    right: 0px;
+    height: fit-content !important;
+    padding: 5px !important;
+    border: 0 !important;
+    transition: .3s;
+    opacity: 0;
+}
+
+.detailAdmin:hover,
+.detailMember:hover,
+.detailProduk:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.bodyListAdmin tr:hover .detailAdmin {
+    opacity: 1;
+}
+
+.bodyListMember tr:hover .detailMember {
+    opacity: 1;
+}
+
+.bodyListProduk tr:hover .detailProduk {
+    opacity: 1;
+}
+
+
+.myBrandLink {
+    height: auto !important;
+}
+
+.conImgPreviewEditAdmin,
+.conImgPreviewEditMember,
+.conImgPreviewProdukEdit {
+    transition: .5s;
+    width: 20% !important;
+}
+
+.myIsvalid {
+    box-shadow: 2px 2px 10px #34A853,
+    -2px -2px 10px #34A853;
+}
+
+.myIsinvalid {
+    box-shadow: 2px 2px 10px #EA4335,
+    -2px -2px 10px #EA4335;
+}
+
+
+
+/* Keyframes */
+@keyframes loaderApiAnimation {
+    0% {
+        width: 5%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
